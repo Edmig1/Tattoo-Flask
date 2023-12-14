@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Artistas</title>
+    <link rel="stylesheet" href="/static/style.css">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/7f62cd2861.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <header class="header2">
+        <a class="text-decoration-none" href="/">Home</a>
+        <a class="text-decoration-none" href="/dicas">Dicas</a>
+    </header>
+    <main class="container-fluid main d-flex flex-column justify-content-center align-items-center" style="background-color:#1f1f1f;;">
+        <section class="row desc-art mt-5 mb-5 pb-3">
+            <div class="col-md-12 div-select d-flex flex-column justify-content-center align-items-center">
+                <select name="select" id="select" onchange="mudar()">
+                    <option value="t0">Escolha seu tatuador</option>
+                    <option value="t1">Jeff</option>
+                    <option value="t2">Azzy</option>
+                    <option value="t3">Jhonny</option>
+                    <option value="t4">Henry</option>
+                </select>
+                <h1 class="text-white titulo-art py-3 px-3">Sobre Nossa Empresa</h1>
+            </div>
+            <div class="col-md-12 col-lg-6 d-flex justify-content-center align-items-center text-white">
+                <p class="texto">A Flash Tatto é uma renomada empresa fundada por Bruno Cardoso em 2005, que se destaca no mercado pela sua excelência no fornecimento de serviços relacionados à indústria de tatuagens temporárias e personalizadas. Com uma trajetória notável ao longo de quase duas décadas, a empresa consolidou sua posição como líder do setor, combinando criatividade, inovação e qualidade em todos os aspectos de seu empreendimento.
+                    Desde a sua fundação, a Flash Tatto tem se empenhado em atender às crescentes demandas dos clientes por tatuagens temporárias que sejam tanto esteticamente atraentes quanto seguras para a pele.</p>
+            </div>
+            <div class="col-md-12 col-lg-6">
+                <img class="img-art rounded-3" src="/static/tattoos.png" style="width: 100%;" alt="">
+            </div>
+        </section>
+        <section class="row galeria mb-5" id="galeria">
+            <div class="col">
+                <div class="row g-3 pb-3 altura">
+                    <div class="col-md-12 div-select w-100 d-flex flex-column align-items-center justify-content-center">
+                        <select name="select2" id="select2" onchange="portifolio()">
+                            <option value="p0">Portifólio dos Artistas</option>
+                            <option value="p1">Jeff</option>
+                            <option value="p2">Azzy</option>
+                            <option value="p3">Jhonny</option>
+                            <option value="p4">Henry</option>
+                        </select>
+                        <h3 class="titulo-port pt-2 text-white">Portifólio:</h3>
+                    </div>
+                    <div class="col-md-4 img-div text-center">
+                        <img class="img-p-1" src="/static/jeff.png" alt="">
+                    </div>
+                    <div class="col-md-4 img-div" style="text-align: center;">
+                        <img class="img-p-2" src="/static/jeff.png" alt="">
+                    </div>
+                    <div class="col-md-4 img-div" style="text-align: center;">
+                        <img class="img-p-3" src="/static/jeff.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="/static/script.js"></script>
+</body>
+</html>

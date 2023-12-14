@@ -1,0 +1,387 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Merriweather', serif;
+}
+.main{
+  min-height: 90vh;
+}
+@font-face {
+  font-family: 'next';
+  src: url(/static/fonts/DOCALLISME\ ON\ STREET.ttf);
+}
+
+.header {
+  height: 100vh;
+  background-image: url(tattoo.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100vw;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.header2{
+  background: #29262b;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.header2 a{
+    color: white;
+    position: relative;
+}
+
+.header2 a:hover {
+  color: #ffffff;
+  transition: 0.5s;
+}
+
+.header2 a::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  transition: 0.5s ease-in-out;
+  background-color: white;
+  height: 2px;
+  left: 0;
+  bottom: 0;
+}
+.header2 a:hover::after {
+  width: 100%;
+  transition: 0.5s ease-in-out;
+}
+
+.header a {
+  font-size: 1.3em;
+}
+
+.header h2 {
+  font-family: next;
+  font-size: 6em;
+}
+
+.titulo {
+  animation-name: letter;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  transition: ease-in-out;
+}
+
+@keyframes letter {
+  0% {
+    letter-spacing: 0;
+  }
+
+  50% {
+    letter-spacing: 0.1em;
+  }
+
+  100% {
+    letter-spacing: 0;
+  }
+}
+
+.header p {
+  opacity: 0.85;
+}
+
+nav a {
+  position: relative;
+  color: rgba(255, 255, 255, 0.427);
+  transition: 0.5s;
+}
+
+nav a:hover {
+  color: #ffffff;
+  transition: 0.5s;
+}
+
+nav a::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  transition: 0.5s ease-in-out;
+  background-color: white;
+  height: 2px;
+  left: 0;
+  bottom: 0;
+}
+
+nav a:hover::after {
+  width: 100%;
+  transition: 0.5s ease-in-out;
+}
+
+.btns {
+  background-color: #ffffff;
+  position: relative;
+  border: none;
+  transition: 0.5s ease-in-out;
+}
+
+.btns:hover {
+  background-color: #c7c7c7;
+}
+
+.menu {
+  position: fixed;
+  z-index: 3;
+  height: 100vh;
+  width: 40vw;
+  background-image: url(../imgs/mesh-284.png);
+  background-image: 10% 10%;
+  transition: 0.7s ease-in-out;
+}
+
+.fechado {
+  right: -70%;
+}
+
+.aberto {
+  right: 0;
+}
+
+.desc-art {
+  max-height: 600px;
+  border-radius: 10px;
+  width: 80%;
+  background-color: #29262b;
+}
+
+.galeria {
+  border-radius: 10px;
+  width: 80%;
+}
+
+.galeriaaberta {
+  min-height: 50vh;
+  display: flex;
+  background-color: #29262b;
+}
+.img-art{
+  transition: 0.5s ease-in-out;
+}
+.img-art:hover{
+  transition: 0.5s ease-in-out;
+  box-shadow: 0px 0px 50px 10px rgba(255, 255, 255, 0.164);
+}
+.img-div {
+  display: none;
+}
+
+.div-select {
+  height: 10%;
+  padding: 0px 0px !important;
+}
+
+.div-select select {
+  width: 100%;
+  color: white;
+  background-color: rgb(25, 25, 25);
+  border-radius: 10px 10px 0px 0px;
+}
+
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #616161 #ffffff;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 16px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #616161;
+  border-radius: 0px;
+  border: 3px solid #ffffff;
+}
+
+@keyframes transition {
+  0% {
+    scale: 0;
+  }
+
+  100% {
+    scale: 1;
+  }
+}
+
+.transition {
+  animation-name: transition;
+  animation-duration: 0.6s;
+}
+
+.div-menu a {
+  font-size: 25px;
+  padding: 10px;
+}
+.img-p-1,
+.img-p-2,
+.img-p-3 {
+  width: 200px;
+}
+
+.titulo-port {
+  display: none;
+}
+
+#sec-cards {
+  min-height: 80vh;
+}
+
+.titulo-benef {
+  color: white;
+}
+
+.cards-benef {
+  gap: 20px;
+  justify-content: space-around;
+}
+
+.cards {
+  width: 20%;
+  border-radius: 20px;
+  height: 330px;
+  background-color: #29262b;
+  transition: 0.5s ease-in-out;
+}
+
+.cards:hover {
+  transition: 0.5s ease-in-out;
+  box-shadow: 0px 0px 50px 10px rgba(255, 255, 255, 0.164);
+  cursor: pointer;
+}
+.cards:tar{
+  border: 1px solid white;
+}
+
+.cards div {
+  height: 50%;
+  width: 100%;
+  text-align: center;
+  color: white;
+}
+
+.cards div i {
+  font-size: 4em;
+}
+.cards p{
+  max-width: 95%;
+}
+
+.footer {
+  transition: 1s ease-in-out;
+  height: 20vh;
+  display: flex;
+  align-items: center;
+  background-color: #29262b;
+  padding: 0px 20px;
+  overflow-x: hidden;
+  position: relative;
+}
+
+.redes {
+  z-index: 2;
+  position: absolute;
+  right: -20%;
+  transition: 1s ease-in-out;
+}
+
+.redes img {
+  transition: 0.3s ease-in-out;
+  padding: 0px 5px;
+}
+
+.redes img:hover {
+  scale: 1.1;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.btn-contato {
+  position: absolute;
+  right: 50%;
+  transition: 1s ease-in-out;
+  transform: translateX(+50%);
+}
+
+/* *********************************************Responsivo************************************************************************ */
+
+@media(max-width:992px) {
+
+  nav a,
+  nav p {
+    display: none;
+  }
+
+  .cards {
+    width: 30%;
+    height: 300px;
+  }
+  .cards div i {
+    font-size: 3em;
+  }
+}
+
+@media(max-width:736px) {
+  .cards-benef {
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  .cards {
+    width: 70%;
+    height: 300px;
+  }
+  .redes {
+    position: static;
+  }
+  .footer{
+    justify-content: center;
+  }
+  .btn-contato{
+    display: none;
+  }
+  
+}
+
+@media(max-width:574px) {
+  header h2 {
+    font-size: 2.5em;
+  }
+  
+}
+
+@keyframes borda {
+  0% {
+    border: 0;
+  }
+
+  50% {
+    border: 0.1em red;
+  }
+
+  100% {
+    border: 0;
+  }
+}
+@media(max-width:400px) {
+  .titulo-benef{
+    font-size: 1.1em; 
+  }
+}
+  .div-menu a {
+    font-size: 17px;
+  }
