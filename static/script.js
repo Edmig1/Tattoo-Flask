@@ -136,7 +136,7 @@ function contato(){
     if (redes.style.right == '-20%'){
         redes.style.right = '2%'
         btn.innerHTML = 'Fechar contato'
-        btn.style.right ='85%'
+        btn.style.right ='85%'  
     }
     else if(redes.style.right == '2%'){
         redes.style.right = '-20%'
